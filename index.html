@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>هش‌ساز آنلاین</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      text-align: right;
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .hash-box {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+      cursor: pointer;
+    }
+    .copied {
+      color: green;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>تولید هش (با Cloudflare Worker)</h1>
+
+  <input type="text" id="textInput" placeholder="متن خود را وارد کنید" />
+  <button onclick="generateHash()">تولید هش</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
